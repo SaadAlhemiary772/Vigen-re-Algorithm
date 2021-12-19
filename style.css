@@ -1,0 +1,59 @@
+.container .sec{
+    align-content: center;
+    width: 400px;
+    display: grid;
+    grid-template-areas: 
+    "lbl lbl"
+    "key key"
+    "wrong wrong"
+    "enteredText enteredText"
+    "wrong1 wrong1"
+    "enc dec"
+    "outText outText"
+    "footer footer";
+    margin: 0px auto;
+}
+
+.sec .key input{
+    width: 235px;
+}
+.sec .wrong{
+    grid-area: wrong;
+}
+.sec .wrong1{
+    grid-area: wrong1;
+}
+.sec .footer{ 
+    margin-top: 0px;
+    grid-area: footer;
+    text-align: center;
+}
+.sec .key{
+    grid-area: key;
+    padding: 10px;
+    margin: 10px;
+}
+.sec *{
+    padding: 10px;
+    margin: 10px;
+}
+.sec .lbl{
+   text-align: center;
+   font-size: 40px;
+    grid-area: lbl;
+}
+.sec #enteredText{
+    grid-area: enteredText;
+}
+
+.sec #encrypt{
+    font-size: large;
+    grid-area: enc;
+}
+.sec #decrypt{
+    font-size: large;
+    grid-area: dec;
+}
+.sec #outText{
+    grid-area: outText;
+}

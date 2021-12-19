@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <article class="container">
+        <section class="sec">
+            <label class="lbl">Vigenère Algorithm</label>
+            <div class="key">
+                <label class="key">KEY</label>
+                <input type="text" placeholder="Key Text For ecryption or decryption" id="keyinput">
+                <span class="wrong" style=" margin-left: 76px; color:red; height: 5px;">Please enter the key text</span>
+            </div>
+
+            <textarea name="text" id="enteredText" cols="30" rows="10"
+                placeholder="Enter The Text You Want To Encrypt Or Decrypt"></textarea>
+            <span class="wrong1" style="color:red; width: 150px; height: 5px; margin-top: -15px;
+            margin-bottom: 13px;">Please enter the text</span>
+
+            <button id="encrypt">Encryption</button>
+            <button id="decrypt"> Decryption</button>
+            <textarea name="text1" id="outText" cols="30" rows="10" readonly></textarea>
+            <footer class="footer">
+                <h3>
+                    <pre> by S a a d A l h e m i a r y</pre>
+                </h3>
+            </footer>
+        </section>
+    </article>
+    <script src="main.js"></script>
+</body>
+
+</html>
